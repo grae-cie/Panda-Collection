@@ -15,12 +15,10 @@ div{
  position: sticky;
  top: 0;
  display: flex;
- justify-content: center;
- align-items: center;
- align-content: center;
+ justify-content: center; 
+  align-items: center;
  height: 100vh;
 }
-
 
 
 h2{
@@ -39,6 +37,9 @@ div img{
  height: 350px;
  object-fit:cover;
  box-shadow: 5px 5px 7px rgba(0, 0, 0, 8);
+}
+div:first-child{
+  transform:  rotate(0deg);
 }
 
 div:nth-child(2) img{
@@ -102,5 +103,9 @@ div:nth-child(17) img{
   div img{
     width: 230px;
     height: 300px
+   }
+
+   div:first-child{
+    margin-top: -200px;
    }
 }
